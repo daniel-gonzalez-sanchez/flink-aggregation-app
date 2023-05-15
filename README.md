@@ -37,19 +37,20 @@ docker-compose down
 
 > **Note:**
 >
-> In the `.env` file, environment variables that take the microservices defined in the docker-compose are defined and parameterized (e.g., to define the user and password of the NiFi service or the topics of the Kafka broker service).
+> In the `.env` file, environment variables that take the microservices defined in the docker-compose are defined and parameterized (e.g., to define the user and password of the Apache NiFi service or the topics of the Apache Kafka service).
 
 ## Build the Java project and use the Apache Flink REST API to run the application
 
 1. Build and compile the Java project:
 ```bash
-mvn clean install
+$ cd flink-traffic-rate/
+$ mvn clean install
 ```
 
 2. Upload the JAR to the Flink cluster:
 
 ```bash
-curl -X POST -H "Expect:" -F "jarfile=@flink-traffic-rate/target/traffic-rate-1.0.jar" http://localhost:8084/jars/upload
+$ curl -X POST -H "Expect:" -F "jarfile=@flink-traffic-rate/target/traffic-rate-1.0.jar" http://localhost:8084/jars/upload
 ```
 > **Example result:**
 > 
@@ -60,7 +61,7 @@ curl -X POST -H "Expect:" -F "jarfile=@flink-traffic-rate/target/traffic-rate-1.
 2. Return a list of all JARs previously uploaded via '/jars/upload' (find the JAR ID of the Flink application):
 
 ```bash
-curl -X GET http://localhost:8084/jars
+$ curl -X GET http://localhost:8084/jars
 ```
 > **Example result:**
 > 
@@ -77,7 +78,7 @@ curl -X GET http://localhost:8084/jars
 - **entry-class** (optional): String value that specifies the fully qualified name of the entry point class. Overrides the class defined in the jar file manifest.
 
 ```bash
-curl -X POST http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_traffic-rate-1.0.jar/run?programArg="kafka:9092,input,output"
+$ curl -X POST http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_traffic-rate-1.0.jar/run?programArg="kafka:9092,input,output"
 ```
 > **Example result:**
 > 
@@ -88,7 +89,7 @@ curl -X POST http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_tra
 4. Return an overview over all Flink jobs and their current state:
 
 ```bash
-curl -X GET http://localhost:8084/jobs
+$ curl -X GET http://localhost:8084/jobs
 ```
 > **Example result:**
 > 
@@ -99,13 +100,13 @@ curl -X GET http://localhost:8084/jobs
 5. Cancel/Stop Flink job:
 
 ```bash
-curl -X PATCH http://localhost:8084/jobs/dc6dcc99b55184a40e2c0390559a3b84?mode=cancel
+$ curl -X PATCH http://localhost:8084/jobs/dc6dcc99b55184a40e2c0390559a3b84?mode=cancel
 ```
 
 6. Delete a JAR previously uploaded:
 
 ```bash
-curl -X DELETE http://localhost:8084/jars/d18cd4e3-09cf-4556-8072-3a6409270b0d_netflow-driver-1.0.jar
+$ curl -X DELETE http://localhost:8084/jars/d18cd4e3-09cf-4556-8072-3a6409270b0d_netflow-driver-1.0.jar
 ```
 
 ## Tester for Apache Flink applications
