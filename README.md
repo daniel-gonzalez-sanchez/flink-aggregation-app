@@ -119,7 +119,7 @@ This section provides guidelines to run a simple _tester_ to be able to test the
 
 There is a [Kafka issue](https://stackoverflow.com/questions/35861501/kafka-in-docker-not-working) related to the Docker service name resolution from outside.  Applications reading or writing from Kafka running on localhost (e.g., Apache Flink applications) try to access the service using the name `kafka`. An easier solution is configuring the Kafka Docker service to advertise on `kafka` host name  (i.e., configure `KAFKA_ADVERTISED_HOST_NAME=kafka` environment variable in the Kafka Docker service definition) and, because it's exposed on the host machine on `localhost:9092`, adding an entry in `/etc/hosts` for `kafka` to resolve to localhost.
 
-- Kafka Docker service definition on the docker-compose file:
+- Kafka Docker service definition on the [docker-compose](docker-compose.yml) file:
 ```bash
   kafka:
     image: wurstmeister/kafka:latest
