@@ -212,6 +212,8 @@ In the `configurations` field, you can include different extra configurations fo
 }
 ```
 
+The resulting configuration file is available [here](flink-traffic-rate/.vscode/launch.json).
+
 ## Documentation
 
 - [Apache Flink Documentation](https://flink.apache.org/)
