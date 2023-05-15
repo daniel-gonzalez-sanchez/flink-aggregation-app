@@ -22,17 +22,17 @@ Simple [Apache Flink](https://flink.apache.org/) streaming application to perfor
 
 To deploy the docker-compose scenario, execute the following command:
 ```bash
-docker-compose up
+$ docker-compose up
 ```
 
 In case you are interested in running the scenario in background, use the following command:
 ```bash
-docker-compose up -d
+$ docker-compose up -d
 ```
 
 Tear the scenario down as follows:
 ```bash
-docker-compose down
+$ docker-compose down
 ```
 
 > **Note:**
