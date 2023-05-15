@@ -2,6 +2,17 @@
 
 Simple [Apache Flink](https://flink.apache.org/) streaming application to perform aggregations from [Prometheus](https://prometheus.io/docs/introduction/overview/) metrics.
 
+## Table of Contents
+
+- [Requirements](#requirements)
+- [Deploy the testbed scenario](#deploy-the-testbed-scenario)
+- [Build the Java project and use the Apache Flink REST API to run the application](#build-the-java-project-and-use-the-apache-flink-rest-api-to-run-the-application)
+- [Tester for Apache Flink applications](#tester-for-apache-flink-applications)
+  - [Kafka service name resolution on localhost](#kafka-service-name-resolution-on-localhost)
+  - [Running and debugging Java applications with input arguments on Visual Studio Code](#running-and-debugging-java-applications-with-input-arguments-on-visual-studio-code)
+- [Documentation](#documentation)
+- [License](#license)
+
 ## Requirements
 
 - Docker (_Tested with version 20.10.14_)
@@ -201,7 +212,12 @@ In the `configurations` field, you can include different extra configurations fo
 ```
 
 ## Documentation
+
 - [Apache Flink Documentation](https://flink.apache.org/)
 - [Apache Flink REST API](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/ops/rest_api/)
 - [Prometheus Documentation](https://prometheus.io/docs/introduction/overview/)
 - [Apache NiFi Documentation](https://nifi.apache.org/)
+
+## License
+
+This project is licensed under [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).
