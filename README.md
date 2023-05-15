@@ -113,7 +113,7 @@ $ curl -X DELETE http://localhost:8084/jars/d18cd4e3-09cf-4556-8072-3a6409270b0d
 
 For testing Apache Flink streaming applications is not needed to deploy a dedicated Flink cluster. Instead, the applications can be debugged directly on top of the localhost JVM.
 
-This section provides guidelines to run a simple "tester" to be able to test these applications based on Apache Flink, incorporating the utility of deploying Kafka as a Docker service from which to read and write the input and output data of the application, as well as the possibility of passing input arguments for the applications from the programming IDE (in this specific case for [Visual Studio Code (VSC)](https://code.visualstudio.com/)).
+This section provides guidelines to run a simple _tester_ to be able to test these applications based on Apache Flink, incorporating the utility of deploying Kafka as a Docker service from which to read and write the input and output data of the application, as well as the possibility of passing input arguments for the applications from the programming IDE (in this specific case for [Visual Studio Code (VSC)](https://code.visualstudio.com/)).
 
 ### Kafka service name resolution on localhost
 
