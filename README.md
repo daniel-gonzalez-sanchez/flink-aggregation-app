@@ -155,7 +155,7 @@ C:\Windows\System32\drivers\etc\hosts
 
 ### Running and debugging Java applications with input arguments on Visual Studio Code
 
-The Visual Studio Code (VSC) IDE includes different options and settings to run and debug the code. For Java applications, it allows customizing particular [launch configuration options](https://code.visualstudio.com/docs/java/java-debugging#_configuration-options) easily with a JSON file template, such as to define arguments and environmental variables. To do that, from the application workspace location (i.e., ./flink-traffic-rate) you must select the `Add Configuration...` option on the `Run` section of the `VSC` toolbox. This action will create a `launch.json` file located in a `.vscode` folder in your workspace. 
+The Visual Studio Code (VSC) IDE includes different options and settings to run and debug the code. For Java applications, it allows customizing particular [launch configuration options](https://code.visualstudio.com/docs/java/java-debugging#_configuration-options) easily with a JSON file template, such as to define arguments and environmental variables. To do that, from the application workspace location (i.e., [`./flink-traffic-rate`](flink-traffic-rate/)) you must select the `Add Configuration...` option on the `Run` section of the `VSC` toolbox. This action will create a `launch.json` file located in a `.vscode` folder in your workspace. 
 
 The following sample `launch.json` file is an example for the Traffic Rate Apache Flink Java application:
 ```bash
