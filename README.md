@@ -132,7 +132,7 @@ There is a [Kafka issue](https://stackoverflow.com/questions/35861501/kafka-in-d
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_LOG_DIRS: "/tmp/kafka-logs"
-      KAFKA_CREATE_TOPICS: "input:1:1,output:1:1"
+      KAFKA_CREATE_TOPICS: "${KAFKA_INPUT_TOPIC},${KAFKA_OUTPUT_TOPIC}"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
