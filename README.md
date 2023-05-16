@@ -100,13 +100,13 @@ $ curl -X GET http://localhost:8084/jobs
 5. Cancel/Stop Flink job:
 
 ```bash
-$ curl -X PATCH http://localhost:8084/jobs/dc6dcc99b55184a40e2c0390559a3b84?mode=cancel
+$ curl -X PATCH http://localhost:8084/jobs/796498e8febb1c378b63ecc0b8d5d878?mode=cancel
 ```
 
 6. Delete a JAR previously uploaded:
 
 ```bash
-$ curl -X DELETE http://localhost:8084/jars/d18cd4e3-09cf-4556-8072-3a6409270b0d_netflow-driver-1.0.jar
+$ curl -X DELETE http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_traffic-rate-1.0.jar
 ```
 
 ## Tester for Apache Flink applications
