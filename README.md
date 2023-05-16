@@ -160,9 +160,9 @@ The Visual Studio Code (VSC) IDE includes different options and settings to run 
 The following sample `launch.json` file is an example for the Traffic Rate Apache Flink Java application:
 ```bash
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -185,9 +185,9 @@ The following sample `launch.json` file is an example for the Traffic Rate Apach
 In the `configurations` field, you can include different extra configurations for your application. For example,  the `args` option allows specifying the command-line arguments passed to the program. The following  sample `launch.json` file includes the arguments needed to run the Traffic Rate Apache Flink Java application:
 ```bash
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
