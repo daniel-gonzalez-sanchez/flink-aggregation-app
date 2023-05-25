@@ -78,7 +78,7 @@ $ curl -X GET http://localhost:8084/jars
 - **entry-class** (optional): String value that specifies the fully qualified name of the entry point class. Overrides the class defined in the jar file manifest.
 
 ```bash
-$ curl -X POST http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_traffic-rate-1.0.jar/run?programArg="kafka:9092,input,output"
+$ curl -X POST http://localhost:8084/jars/3da912fb-c7d4-4875-998e-b711d6f0e1d6_traffic-rate-1.0.jar/run?programArg="kafka:9092,input,output,10"
 ```
 > **Example result:**
 > 
@@ -205,7 +205,8 @@ In the `configurations` field, you can include different extra configurations fo
             "args": [
                 "kafka:9092",
                 "input",
-                "output"
+                "output",
+                "5"
             ]
         }
     ]

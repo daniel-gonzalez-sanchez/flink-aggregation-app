@@ -19,7 +19,8 @@
             "args": [
                 "kafka:9092",
                 "input",
-                "output"
+                "output",
+                "5"
             ]
         }
     ]
